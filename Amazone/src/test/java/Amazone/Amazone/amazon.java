@@ -71,6 +71,7 @@ public class amazon {
                 
                 
                 result.findElement(By.xpath("./ancestor::a")).click();
+                Thread.sleep(5000);
                 break;
             	}
 			}
@@ -79,15 +80,10 @@ public class amazon {
 			String G = driver.findElement(By.tagName("Body")).getText();
 			System.out.println(G + ex.getMessage());
 		}
+		
+		driver.quit();
             
-		}
-		
-		
-		
-		
-		
-		   
+		}	   
 
-		
-	}
 }
+
