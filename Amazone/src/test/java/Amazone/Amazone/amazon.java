@@ -83,7 +83,7 @@ public class amazon {
 			Element = wait.until((ExpectedConditions.visibilityOfElementLocated(By.id(Sample))));
 		
 			//Enter the product you want to search
-			value= "iphone";
+			value=BigData("Userinput");
 			Element.sendKeys(value);
 			//click on button
 			Sample=BigData("button");
